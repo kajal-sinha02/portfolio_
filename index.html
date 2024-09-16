@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Kajal Sinha - Personal Portfolio</title>
+
+    <!--
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./assets/images/hi.ico" type="image/x-icon">
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/linkedinpost.css">
+    <link rel="stylesheet" href="./assets/css/tablecss.css">
+    <link rel="stylesheet" href="./assets/css/badges.css">
+    <link rel="stylesheet" href="./assets/css/skills-portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-GLhlTQ8iN17PdL7vR7RTOZFVaUdNQ+T9S263i6TJXYiS7Z1v1e5U5dY3eI5FkDfR" crossorigin="anonymous">
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+
+        <!--
+      - #SIDEBAR
+    -->
+
+        <aside class="sidebar" data-sidebar>
+
+            <div class="sidebar-info">
+
+                <figure class="avatar-box">
+                    <img src="./assets/images/hey.png" alt="Kajal Sinha" width="80">
+                </figure>
+
+                <!-- <div class="info-content">
+          <h1 class="name" title="Alfaizkhan Pathan">Alfaizkhan Pathan</h1>
+          <p class="title">Flutter | Android | iOS</p>
+        </div> -->
+
+                <div class="info-content">
+                    <h1 class="name" title="ks">Kajal Sinha</h1>
+                    <!-- <p class="title" title="Flutter | Android | iOS">Flutter | Android | iOS</p> -->
+                    <p class="title">Full Stack Web Developer</p>
+                </div>
+
+                <button class="info_more-btn" data-sidebar-btn>
+                    <span>Show Contacts</span>
+
+                    <ion-icon name="chevron-down"></ion-icon>
+                </button>
+
+            </div>
+
+            <div class="sidebar-info_more">
+
+                <div class="separator"></div>
+
+                <ul class="contacts-list">
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Email</p>
+
+                            <a href="mailto:alfaizkhan2810@gmail.com"
+                                class="contact-link">kajalsinha659@gmail.com</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Phone</p>
+
+                            <a href="tel:+919015727903" class="contact-link">+91 9015727903</a>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Birthday</p>
+
+                            <time datetime="2002-12-02">December 02, 2002</time>
+                        </div>
+
+                    </li>
+
+                    <li class="contact-item">
+
+                        <div class="icon-box">
+                            <ion-icon name="location-outline"></ion-icon>
+                        </div>
+
+                        <div class="contact-info">
+                            <p class="contact-title">Location</p>
+
+                            <address>New Delhi, India</address>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="separator"></div>
+
+                <ul class="social-list">
+
+                    <li class="social-item">
+                        <a href="https://github.com/kajal-sinha02" target="_blank" class="social-link">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="social-item">
+                        <a href="https://www.linkedin.com/in/kajal-sinha-37084b257/" target="_blank"
+                            class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+
+
+
+        <!--
+      - #main-content
+    -->
+
+        <div class="main-content">
+
+            <!--
+        - #NAVBAR
+      -->
+
+            <nav class="navbar">
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <button class="navbar-link  active" data-nav-link>About</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Resume</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Portfolio</button>
+                    </li>
+
+                    <!-- <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link>Code Hub</button>
+                    </li> -->
+
+                    <li class="navbar-item">
+                        <button class="navbar-link" data-nav-link onclick="openContactPage()">Contact</button>
+                    </li>
+                </ul>
+
+            </nav>
+
+
+
+
+
+            <!--
+        - #ABOUT
+      -->
+
+            <article class="about  active" data-page="about">
+
+                <header>
+                    <h2 class="h2 article-title">About me</h2>
+                </header>
+
+                <section class="about-text">
+                    <p>
+                        I'm a versatile Full Stack Developer and accomplished Competitive
+                        Programmer, dedicated to crafting seamless and innovative solutions that blend cutting-edge
+                        technology with a passion for problem-solving. Welcome to my portfolio, where code meets
+                        creativity, and every project tells a unique story of innovation and excellence.
+                    </p>
+                </section>
+
+
+                <!--
+          - service
+        -->
+
+                <section class="service">
+
+                    <h3 class="h3 service-title">What i'm doing</h3>
+
+                    <ul class="service-list">
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/webd2.png" alt="web dev icon" width="70">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Web Development</h4>
+
+                                <p class="service-item-text">
+                                    Transforming concepts into dynamic web solutions, I integrate design seamlessly for
+                                    a compelling user experience.
+                                </p>
+                            </div>
+
+                        </li>
+
+                        <li class="service-item">
+
+                            <div class="service-icon-box">
+                                <img src="./assets/images/cp2.png" alt="camera icon" width="70">
+                            </div>
+
+                            <div class="service-content-box">
+                                <h4 class="h4 service-item-title">Competitive Programming</h4>
+
+                                <p class="service-item-text">
+                                    Mastering C++, I navigate coding challenges with precision, excelling in competitive
+                                    programming.
+                                </p>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+
+                <section class="skills">
+
+                    <h3 class="h3 testimonials-title">Skills</h3>
+
+                    <ul class="testimonials-list has-scrollbar">
+
+                        <li class="testimonials-item">
+                            <div class="content-card" data-testimonials-item>
+
+                                <!--<figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-1.png" alt="Client From USA" width="60"
+                                        data-testimonials-avatar>
+                                </figure>-->
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Languages</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/c++.png" title="C++"
+                                            class="skills-icon-img" alt="C++" width="60">
+                                    </div>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/html-5.png" title="HTML5"
+                                            class="skills-icon-img" alt="html5" width="60">
+                                    </div>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/css-3.png" title="CSS3"
+                                            class="skills-icon-img" alt="css3" width="60">
+                                    </div>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/js.png" title="Javascript"
+                                            class="skills-icon-img" alt="javascript" width="56">
+                                    </div>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/sql-server.png" title="SQL"
+                                            class="skills-icon-img" alt="sql" width="60">
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="content-card" data-testimonials-item>
+
+                                <!--<figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-1.png" alt="Client From USA" width="60"
+                                        data-testimonials-avatar>
+                                </figure>-->
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Frameworks</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/react.png" title="ReactJS"
+                                            class="skills-icon-img" alt="ReactJS" width="60">
+                                    </div>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/node.png" title="NodeJS"
+                                            class="skills-icon-img" alt="nodeJS" width="80">
+                                    </div>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/mongo.png" title="MongoDB"
+                                            class="skills-icon-img" alt="MongoDB" width="70">
+                                    </div>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/Bootstrap.png" title="Bootstrap"
+                                            class="skills-icon-img" alt="Bootstrap" width="64">
+                                    </div>
+                                    <!-- <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/tf.png" title="Tensorflow"
+                                            class="skills-icon-img" alt="Tensorflow" width="64">
+                                    </div> -->
+                                </div>
+
+                            </div>
+
+
+                            <div class="content-card" data-testimonials-item>
+
+                                <!--<figure class="testimonials-avatar-box">
+                                    <img src="./assets/images/avatar-1.png" alt="Client From USA" width="60"
+                                        data-testimonials-avatar>
+                                </figure>-->
+
+                                <h4 class="h4 testimonials-item-title" data-testimonials-title>Tools</h4>
+
+                                <div class="testimonials-text" data-testimonials-text>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/postman.png" title="postman"
+                                            class="skills-icon-img" alt="postman" width="60">
+                                    </div>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/github.png" title="github"
+                                            class="skills-icon-img" alt="github" width="60">
+                                    </div>
+                                    <div class="skills-icons">
+                                        <img src="./assets/images/skills/before/vs.png" title="vs code"
+                                            class="skills-icon-img" alt="vs code" width="70">
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+
+
+
+
+            <!--
+        - #RESUME
+      -->
+
+            <!--resume link: https://drive.google.com/file/d/1K-IvbjMNppW9rUNB3pPkLlEKxnCrZTeC/view?usp=sharing-->
+
+            <article class="resume" data-page="resume">
+
+                <header>
+                    <h2 class="h2 article-title">Résumé</h2>
+                    <a class="resume-link-btn"
+                        href="https://drive.google.com/file/d/1VT2rbk9mh-TnfjkLd1ZgGrTu7G5XvHBt/view?usp=sharing"
+                        target="_blank">View full résumé 🔗</a>
+                </header>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Education</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">Indian Institute of Information Technology Ranchi</h4>
+
+                            <span>Expected date: August 2026</span>
+
+                            <p class="timeline-text">
+                                Bachelor of Technology - Computer Science & Engineering
+                                <br>
+                                Grade: 8.49/10 GPA
+                                </br>
+
+                            </p>
+
+                        </li>
+
+                        <li class="timeline-item">
+
+                            <h4 class="h4 timeline-item-title">J.K.G International School, Uttar Pradesh</h4>
+
+                            <span>2019 — 2021</span>
+
+                            <p class="timeline-text">
+                                CBSE (12th), PCM
+                                <br>
+                                Grade: 95.4%
+                                </br>
+                            </p>
+
+                        </li>
+
+                    </ol>
+
+                </section>
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Achievements</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">GDSC Hackathon</h4>
+                            <span>Shortlisted for India Regional Bootcamp of Google Solution Challenge 2024.</span>
+                            <span>Jan 2024</span>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Open source contribution</h4>
+                            <span>Participated in Hacktoberfest ’23 by engaging in open-source contribution.</span>
+                            <span>Oct 2023</span>
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Hackathon</h4>
+                            <span>Cleared college level ideathon round of Smart India Hackathon 2023 and got selected in the top 30 teams.</span>
+                          
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Hackathon</h4>
+                            <span>Participated in Start-A-Thon Hackathon co-organized by JITSIE IIT Madras in August 2023.</span>
+                          
+                        </li>
+
+                    </ol>
+
+                </section>
+
+                <section class="skill">
+
+                    <h3 class="h3 skills-title">My skills</h3>
+
+                    <ul class="skills-list content-card">
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5"><strong>Programming Languages:</strong>&nbsp;&nbsp;&nbsp; C++, C,
+                                    Javascript, HTML5, CSS3, SQL</h5>
+                                <data value="100"></data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 100%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5"><strong>Tools:</strong> &nbsp;&nbsp;&nbsp;Visual Studio Code, Postman,
+                                    Git, npm, Google Colab</h5>
+                                <data value="100"></data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 100%;"></div>
+                            </div>
+
+                        </li>
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5"><strong>Frameworks:</strong> &nbsp;&nbsp;&nbsp;ReactJS, NodeJS, MongoDB</h5>
+                                <data value="100"></data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" style="width: 100%;"></div>
+                            </div>
+
+                        </li>
+                    </ul>
+
+                </section>
+
+
+                <section class="timeline">
+
+                    <div class="title-wrapper">
+                        <div class="icon-box">
+                            <ion-icon name="book-outline"></ion-icon>
+                        </div>
+
+                        <h3 class="h3">Positions of Responsibility</h3>
+                    </div>
+
+                    <ol class="timeline-list">
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Team Member</h4>
+                            <h4 class="h4 timeline-item-title"></h4>
+                            <span>House of Geeks</span>
+                            <span>Dec 2022 - present</span>
+
+                            <p class="timeline-text">
+                                Team Member, House of Geeks, Software Development Wing.
+                            </p>
+                        
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Team Member</h4>
+                            <h4 class="h4 timeline-item-title"></h4>
+                            <span>Google Developer Student Club</span>
+                            <span>Dec 2022 - present</span>
+
+                            <p class="timeline-text">
+                                Team Member, Google Developer Student Clubs, IIIT Ranchi.
+                            </p>
+                        
+                        </li>
+
+                        <li class="timeline-item">
+                            <h4 class="h4 timeline-item-title">Member</h4>
+                            <h4 class="h4 timeline-item-title"></h4>
+                            <span>House of Geeks</span>
+                            <span>Dec 2022 - present</span>
+
+                            <p class="timeline-text">
+                                Team Member, House of Geeks, Competitive Programming Wing.
+                            </p>
+                        
+                        </li>
+
+                    </ol>
+
+                </section>
+
+            </article>
+
+
+
+
+
+            <!--
+        - #PORTFOLIO
+      -->
+
+            <article class="portfolio" data-page="portfolio">
+
+                <header>
+                    <h2 class="h2 article-title">Projects</h2>
+                </header>
+
+                <section class="projects">
+
+
+                    <div class="filter-select-box">
+
+                        <button class="filter-select" data-select>
+
+                            <div class="select-value" data-selecct-value>Select category</div>
+
+                            <div class="select-icon">
+                                <ion-icon name="chevron-down"></ion-icon>
+                            </div>
+
+                        </button>
+
+                        <ul class="select-list">
+
+                            <li class="select-item">
+                                <button data-select-item>All</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Web Applications</button>
+                            </li>
+
+                            <li class="select-item">
+                                <button data-select-item>Machine Learning</button>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <ul class="project-list">
+
+                        <li class="project-item  active" data-filter-item data-category="Web Applications">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <!--<div class="clickable-element" onclick="window.open('https://654c87bf4131304931f09d28--whimsical-stroopwafel-96b743.netlify.app/', '_blank');">
+                                            <ion-icon name="eye-outline" size="large" style="--ionicon-stroke-width: 50px;"></ion-icon>
+                                        </div>-->
+
+                                        <div class="clickable-element"
+                                        onclick="window.open('https://github.com/kajal-sinha02/Deep', '_blank');">
+                                        <ion-icon name="eye-outline" size="large"
+                                            style="--ionicon-stroke-width: 50px;"></ion-icon>
+                                    </div>
+                                    </div>
+
+                                    <img src="./assets/images/projects/attendance.png" alt="finance" loading="lazy">
+                                </figure>
+
+                                <div class="skills-portfolio">
+                                    <div class="skills-portfolio-icons hazy-container">
+                                        <img src="./assets/images/skills/--portfolio/react.png" title="ReactJS"
+                                            class="skills-portfolio-icon-img" alt="ReactJS" width="24">
+                                    </div>
+                                    <div class="skills-portfolio-icons hazy-container">
+                                        <img src="./assets/images/skills/--portfolio/node.png" title="NodeJS"
+                                            class="skills-portfolio-icon-img" alt="nodeJS" width="40">
+                                    </div>
+                                    <div class="skills-portfolio-icons hazy-container">
+                                        <img src="./assets/images/skills/--portfolio/mongo.png" title="MongoDB"
+                                            class="skills-portfolio-icon-img" alt="MongoDB" width="27">
+                                    </div>
+                                    <!-- <div class="skills-portfolio-icons hazy-container">
+                                        <img src="./assets/images/skills/--portfolio/aws.png" title="AWS"
+                                            class="skills-portfolio-icon-img" alt="AWS S3" width="27">
+                                    </div> -->
+                                </div>
+
+                                <h3 class="project-title">FaceX</h3>
+                                <p class="project-category">Face Tampered Video detection</p>
+
+                            </a>
+                        </li>
+
+                      
+
+
+
+                        
+                        <li class="project-item  active" data-filter-item data-category="Web Applications">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <div class="clickable-element"
+                                            onclick="window.open('https://memomateee.onrender.com/about', '_blank');">
+                                            <ion-icon name="eye-outline" size="large"
+                                                style="--ionicon-stroke-width: 50px;"></ion-icon>
+                                        </div>
+
+                                        <div class="clickable-element"
+                                            onclick="window.open('https://github.com/kajal-sinha02/memomate', '_blank');">
+                                            <i class="fab fa-github" style="font-size: 25px;"></i>
+                                        </div>
+                                    </div>
+
+                                    <img src="./assets/images/projects/zemech.png" alt="orizon" loading="lazy">
+                                </figure>
+
+                                <div class="skills-portfolio">
+                                    <div class="skills-portfolio-icons hazy-container">
+                                        <img src="./assets/images/skills/--portfolio/react.png" title="ReactJS"
+                                            class="skills-portfolio-icon-img" alt="ReactJS" width="24">
+                                    </div>
+                                    <div class="skills-portfolio-icons hazy-container">
+                                        <img src="./assets/images/skills/--portfolio/node.png" title="NodeJS"
+                                            class="skills-portfolio-icon-img" alt="nodeJS" width="40">
+                                    </div>
+                                    <div class="skills-portfolio-icons hazy-container">
+                                        <img src="./assets/images/skills/--portfolio/mongo.png" title="MongoDB"
+                                            class="skills-portfolio-icon-img" alt="MongoDB" width="27">
+                                    </div>
+                                    <div class="skills-portfolio-icons hazy-container">
+                                        <img src="./assets/images/skills/--portfolio/Bootstrap.png" title="Bootstrap"
+                                            class="skills-portfolio-icon-img" alt="Bootstrap" width="27">
+                                    </div>
+                                </div>
+
+                                <h3 class="project-title">Memomate</h3>
+                                <p class="project-category">A fullstack web-app for efficient notes management</p>
+
+                            </a>
+                        </li>
+
+                        <li class="project-item  active" data-filter-item data-category="Web Applications">
+                            <a href="#">
+
+                                <figure class="project-img">
+                                    <div class="project-item-icon-box">
+                                        <div class="clickable-element"
+                                            onclick="window.open('https://mealpie-8zwg.onrender.com/', '_blank');">
+                                            <ion-icon name="eye-outline" size="large"
+                                                style="--ionicon-stroke-width: 50px;"></ion-icon>
+                                        </div>
+
+                                        <div class="clickable-element"
+                                            onclick="window.open('https://github.com/kajal-sinha02/mealpie', '_blank');">
+                                            <i class="fab fa-github" style="font-size: 25px;"></i>
+                                        </div>
+                                    </div>
+
+                                    <img src="./assets/images/projects/keeper-app.png" alt="orizon" loading="lazy">
+                                </figure>
+
+                                <div class="skills-portfolio">
+                                    <div class="skills-portfolio-icons hazy-container">
+                                        <img src="./assets/images/skills/--portfolio/react.png" title="ReactJS"
+                                            class="skills-portfolio-icon-img" alt="ReactJS" width="24">
+                                    </div>
+                                    <div class="skills-portfolio-icons hazy-container">
+                                        <img src="./assets/images/skills/--portfolio/css-3.png" title="CSS"
+                                            class="skills-portfolio-icon-img" alt="CSS" width="28">
+                                    </div>
+                                </div>
+
+                                <h3 class="project-title">Mealpie</h3>
+                                <p class="project-category">Web development</p>
+
+                            </a>
+                        </li>
+
+                       
+
+
+                        <li class="project-item  active" data-filter-item data-category="Web Applications">
+                            <a href="#">
+
+                                <figure class="project-img" style="height: 100px;">
+                                    <div class="project-item-icon-box">
+                                        <div class="clickable-element"
+                                            onclick="window.open('https://nimble-melomakarona-360a74.netlify.app/#/', '_blank');">
+                                            <ion-icon name="eye-outline" size="large"
+                                                style="--ionicon-stroke-width: 50px;"></ion-icon>
+                                        </div>
+
+                                        <div class="clickable-element"
+                                            onclick="window.open('https://github.com/kajal-sinha02/unstop_clone', '_blank');">
+                                            <i class="fab fa-github" style="font-size: 25px;"></i>
+                                        </div>
+                                    </div>
+
+                                    <img src="./assets/images/flutter.png" alt="orizon" loading="lazy" height="100px">
+                                </figure>
+
+                                <div class="skills-portfolio">
+                                    <div class="skills-portfolio-icons hazy-container">
+                                        <img src="./assets/images/flutteri.png" title="ReactJS"
+                                            class="skills-portfolio-icon-img" alt="ReactJS" width="24">
+                                    </div>
+                                   
+                                </div>
+
+                                <h3 class="project-title">Upstop clone</h3>
+                                <p class="project-category">A Cross platform web-app using Flutter</p>
+
+                            </a>
+                        </li>
+
+                        
+
+                    </ul>
+
+                </section>
+
+            </article>
+
+            <article class="contact" data-page="contact">
+
+                <header>
+                    <h2 class="h2 article-title">Contact</h2>
+                </header>
+                <section class="contact-form">
+                    <h3 class="h3 form-title">Contact Form</h3>
+                    <form action="https://formspree.io/f/xgvwbrdo" method="post" class="form" data-form onsubmit="redirectToPreviousPage()">
+                        <div class="input-wrapper">
+                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                            <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+                        </div>
+                        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+                        <button class="form-btn" type="submit">
+                            <ion-icon name="paper-plane"></ion-icon>
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </section>
+                
+               
+                
+
+            </article>
+
+
+        </div>
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://kit.fontawesome.com/a22c189f44.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+   
+
+</body>
+
+</html>
