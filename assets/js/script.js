@@ -138,6 +138,8 @@ for (let i = 0; i < formInputs.length; i++) {
 
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
+
+
 const pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
@@ -185,3 +187,25 @@ function openContactSection() {
   const contactPageUrl = window.location.href + "#contact"; // If it's on the same page
   window.open(contactPageUrl, '_blank');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const projectsBtn = document.getElementById('projects-btn');
+  const projectsSection = document.getElementById('projects-section');
+
+  projectsBtn.addEventListener('click', function() {
+      if (projectsSection.style.display === 'none' || projectsSection.style.display === '') {
+          projectsSection.style.display = 'block';
+      } else {
+          projectsSection.style.display = 'none';
+      }
+  });
+});
+
+
+if (navLink.innerText === "Portfolio") {
+  navLink.innerText = "Projects";
+}
+
+
+
+
